@@ -51,7 +51,7 @@ class HelloWorldControllerTest {
 
         // Verify the response obtained matches the values we expect.
         JSONObject jsonObjectFromResponse = new JSONObject(responseEntity.getBody().toString());
-        assertEquals(EXPECTED_RESPONSE_VALUE, jsonObjectFromResponse.get("output"));
+        assertEquals(EXPECTED_RESPONSE_VALUE, jsonObjectFromResponse.get("Output"));
         assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
     }
 
@@ -65,7 +65,7 @@ class HelloWorldControllerTest {
 
         // Verify the response obtained matches the values we expect.
         JSONObject jsonObjectFromResponse = new JSONObject(responseEntity.getBody().toString());
-        assertEquals(EXPECTED_RESPONSE_VALUE, jsonObjectFromResponse.get("output"));
+        assertEquals(EXPECTED_RESPONSE_VALUE, jsonObjectFromResponse.get("Output"));
         assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
     }
 }
